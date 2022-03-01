@@ -1,0 +1,69 @@
+<div class="row mt-2">
+
+    <div class="col-md-8 mx-auto">
+        <div class="card">
+            <div class="card-header">My Profile</div>
+            <div class="card-body">
+                <form [formGroup] = "updateProfileForm" (ngSubmit) = "updateProfile()" >
+                    <div *ngIf="dbError!=''" class="text-center">
+                        <h6 class="text-danger">{{dbError}}</h6>
+                    </div>
+                    <div *ngIf="successMessage!=''" class="text-center">
+                        <h6 class="text-success">{{successMessage}}</h6>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input [class.is-invalid]="name?.invalid && name?.touched" formControlName="name" type="text" name="name" class="form-control" >
+                        <small [class.d-none] = "name?.valid || name?.untouched" class="text-danger">name is Required</small>
+                      
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input formControlName="email" type="text" name="email" class="form-control" >
+                        <!-- <small [class.d-none] = "name?.valid || name?.untouched" class="text-danger">name is Required</small> -->
+                      
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="country">Country</label>
+                                <input [class.is-invalid]="country?.invalid && country?.touched" formControlName="country" type="text" name="country" class="form-control" >
+                                <small [class.d-none] = "country?.valid || country?.untouched" class="text-danger">country is Required</small>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="state">State</label>
+                                <input [class.is-invalid]="state?.invalid && state?.touched" formControlName="state" type="text" name="state" class="form-control" >
+                                <small [class.d-none] = "state?.valid || state?.untouched" class="text-danger">state is Required</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input [class.is-invalid]="city?.invalid && city?.touched" formControlName="city" type="text" name="city" class="form-control" >
+                                <small [class.d-none] = "city?.valid || city?.untouched" class="text-danger">city is Required</small>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="zip">Zip Code</label>
+                                <input [class.is-invalid]="zip?.invalid && zip?.touched" formControlName="zip" type="text" name="zip" class="form-control" >
+                                <small [class.d-none] = "zip?.valid || zip?.untouched" class="text-danger">zip code is Required</small>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="text-center">
+                        <button class="btn btn-primary" [disabled]="!updateProfileForm.valid">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

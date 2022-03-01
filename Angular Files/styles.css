@@ -1,0 +1,9 @@
+body{
+    margin:0;
+    font-family: poppins, sans-serif;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+html, body { height: 100%; }
+/* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */

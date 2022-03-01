@@ -1,0 +1,44 @@
+<div class="row mt-4">
+    <div class="col-md-6">
+        <span id ="heading">Parcel Delivery System</span>
+        <img src="../assets/bg2.png" id = "pdImage" alt="Parcel Delivery">
+    </div>
+    <div class="col-md-6">
+        <div class="card mx-4">
+            <div class="card-header">Register</div>
+            <div class="card-body">
+                <form [formGroup] = "registrationForm" (ngSubmit) = "registerUser()" >
+                    <div class="form-group">
+                        <div *ngIf="dbError" class="text-center">
+                            <h6 class="text-danger">{{dbErrorMsg}}</h6>
+                        </div>
+                        <label for="email">Email</label>
+                        <input [class.is-invalid]="email?.invalid && email?.touched" formControlName="email" type="text" name="email" class="form-control" >
+                        <div *ngIf="email?.invalid && email?.touched">
+                            <small class="text-danger">Email is Required</small>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input [class.is-invalid]="phone?.invalid && phone?.touched" formControlName="phone" type="text" name="phone" class="form-control">
+                        <div *ngIf="phone?.invalid && phone?.touched">
+                            <small *ngIf="phone?.errors?.['required']" class="text-danger">Phone Number. is Required</small>
+                            <small *ngIf="phone?.errors?.['pattern']" class="text-danger">Phone Number must be of 10 digits</small>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input [class.is-invalid]="password?.invalid && password?.touched" formControlName="password" type="password" name="password" class="form-control">
+                        <div *ngIf="password?.invalid && password?.touched">
+                            <small *ngIf="password?.errors?.['required']" class="text-danger">Password is Required</small>
+                            <small *ngIf="password?.errors?.['minlength']" class="text-danger">Password must be atleast 5 characters</small>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn" [disabled]="!registrationForm.valid">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

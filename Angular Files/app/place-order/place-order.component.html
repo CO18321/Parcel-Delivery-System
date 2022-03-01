@@ -1,0 +1,130 @@
+<div class="row mt-2 mb-4">
+
+    <div class="col-md-12 mx-auto">
+        <div class="card">
+            <div class="card-header">Place New Order</div>
+            <div class="card-body">
+                <form [formGroup] = "newOrderForm" (ngSubmit) = "placeOrder()" >
+                    <div *ngIf="dbError!=''" class="text-center">
+                        <h6 class="text-danger">{{dbError}}</h6>
+                    </div>
+                    <div *ngIf="successMessage!=''" class="text-center">
+                        <h6 class="text-success">{{successMessage}}</h6>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="pickupAddress">Pickup Address</label>
+                                <input [class.is-invalid]="pickupAddress?.invalid && pickupAddress?.touched" formControlName="pickupAddress" type="text" name="pickupAddress" class="form-control" >
+                                <small [class.d-none] = "pickupAddress?.valid || pickupAddress?.untouched" class="text-danger">Pickup Address is Required</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="deliveryAddress">Delivery Address</label>
+                                <input [class.is-invalid]="deliveryAddress?.invalid && deliveryAddress?.touched" formControlName="deliveryAddress" type="text" name="deliveryAddress" class="form-control" >
+                                <small [class.d-none] = "deliveryAddress?.valid || deliveryAddress?.untouched" class="text-danger">Delivery Address is Required</small>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="weight">Weight (kg)</label>
+                                        <input [class.is-invalid]="weight?.invalid && weight?.touched" formControlName="weight" type="text" name="weight" class="form-control" >
+                                        <div *ngIf="weight?.invalid && weight?.touched">
+                                            <small *ngIf = "weight?.errors?.['required']" class="text-danger">weight is Required</small>
+                                            <small *ngIf = "weight?.errors?.['pattern']" class="text-danger">Enter Valid Weight</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="height">Height (inches)</label>
+                                        <input [class.is-invalid]="height?.invalid && height?.touched" formControlName="height" type="text" name="height" class="form-control" >
+                                        <div *ngIf="height?.invalid && height?.touched">
+                                            <small *ngIf = "height?.errors?.['required']" class="text-danger">Height is Required</small>
+                                            <small *ngIf = "height?.errors?.['pattern']" class="text-danger">Enter Valid Height</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="length">Length (inches)</label>
+                                        <input [class.is-invalid]="length?.invalid && length?.touched" formControlName="length" type="text" name="length" class="form-control" >
+                                        <div *ngIf="length?.invalid && length?.touched">
+                                            <small *ngIf = "length?.errors?.['required']" class="text-danger">Length is Required</small>
+                                            <small *ngIf = "length?.errors?.['pattern']" class="text-danger">Enter Valid Length</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="width">Width (inches)</label>
+                                        <input [class.is-invalid]="width?.invalid && width?.touched" formControlName="width" type="text" name="width" class="form-control" >
+                                        <div *ngIf="width?.invalid && width?.touched">
+                                            <small *ngIf = "width?.errors?.['required']" class="text-danger">Width is Required</small>
+                                            <small *ngIf = "width?.errors?.['pattern']" class="text-danger">Enter Valid Width</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 p-4">
+                            <div class="text-danger" >{{imageError}}</div>
+                            <div id="uploadImage">
+                                <div id="noImage" *ngIf="imageURL==''"class="text-center">
+                                    <span >Your Parcel image will be displayed here</span>
+                                    
+                                </div>
+                                <div id="selectedImage" *ngIf="imageURL!=''" class="text-center">
+                                    <img [src]="imageURL">
+                                </div>
+                            </div>
+                            <div id ="selectImageButton">
+                                <input type="file" (change)="onFileSelection($event)">
+                                <!-- <button class="btn" (click)="uploadSelectedFile()">Upload</button> -->
+                            </div>
+                           
+                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="alternatePhone">Alternate Phone Number</label>
+                                <input [class.is-invalid]="alternatePhone?.invalid && alternatePhone?.touched" formControlName="alternatePhone" type="text" name="alternatePhone" class="form-control" >
+                                <small [class.d-none] = "alternatePhone?.valid || alternatePhone?.untouched" class="text-danger">Enter valid Phone Number</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="coupon">Coupon</label>
+                                <input [class.is-invalid]="couponError" formControlName="coupon" type="text" name="coupon" class="form-control" >
+                                <small [class.d-none] = "!couponError" class="text-danger">Invalid Coupon</small>
+                            
+                                <!-- [class.is-invalid]="coupon?.invalid && coupon?.touched"  -->
+                                <!-- <small [class.d-none] = "coupon?.valid || coupon?.untouched" class="text-danger">Invalid Coupon</small> -->
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card" id = "coupon">
+                                <div class="card-header" id = "couponHeading">
+                                    Coupons
+                                </div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li *ngFor="let coupon of coupons">{{coupon}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn" [disabled]="!newOrderForm.valid">Place Order</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+</div>

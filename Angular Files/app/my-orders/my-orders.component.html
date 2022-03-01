@@ -1,0 +1,56 @@
+<div *ngIf="!myOrderHistory.length" class="mt-4 text-center">
+    <span>You don't have any orders</span>
+</div>
+
+
+<div *ngFor ="let order of myOrderHistory" class="md-12" id="orderBox">
+    <div class="row" (click)="trackOrder(order)">
+        <div class="col-lg-1">
+            <div class="orderField">Order ID</div>
+            <div class="orderFieldValue">{{order.orderID}}</div>
+            
+        </div>
+        <div class="vl"></div>
+        <div class="col-lg-2">
+           
+            <!-- <spna class="vr"></span> -->
+            <div class="orderField">Pick Up Address</div>
+            <div class="orderFieldValue">{{order.pickupAddress}}</div>
+        </div>
+        <div class="vl"></div>
+        <div class="col-lg-2">
+            <div class="orderField">Delivery Address</div>
+            <div class="orderFieldValue">{{order.deliveryAddress}}</div>
+        </div>
+        <div class="vl"></div>
+        <div class="col-lg-1">
+            <div class="orderField">Weight</div>
+            <div class="orderFieldValue">{{order.weight}} kg</div>
+        </div>
+        <div class="vl"></div>
+        <div class="col-lg-1">
+            <div class="orderField">Height</div>
+            <div class="orderFieldValue">{{order.height}} inches</div>
+        </div>
+        <div class="vl"></div>
+        <div class="col-lg-1">
+            <div class="orderField">Length</div>
+            <div class="orderFieldValue">{{order.length}} inches</div>
+        </div>
+        <div class="vl"></div>
+        <div class="col-lg-1">
+            <div class="orderField">Width</div>
+            <div class="orderFieldValue">{{order.width}} inches</div>
+        </div>
+        <div class="vl"></div>
+        <div class="col-lg-1">
+            <div class="orderField">Amount</div>
+            <div class="orderFieldValue">{{order.cost |currency:'INR' }}</div>
+        </div>
+
+    </div>
+</div>
+
+<!-- <ul >
+    <li *ngFor ="let order of myOrderHistory" >{{order | json}}</li>
+</ul> -->

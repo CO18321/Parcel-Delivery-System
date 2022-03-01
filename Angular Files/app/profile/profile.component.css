@@ -1,0 +1,24 @@
+.card-header{
+    text-align: center;
+    /* background-color: ;
+    fon */
+    font-size: 24px;
+}
+.form-group{
+    margin-top:15px
+}
+.btn{
+    background-color: #6bcc93;
+    margin-top: 20px;
+    border: none;
+}
+
+small{
+    font-weight: 300;
+    font-size: 12px;
+
+}
+input{
+    font-weight: 300;
+    margin-top: 5px;
+}

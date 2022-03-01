@@ -1,0 +1,9 @@
+<!-- <h3 mat-dialog-title>Confirm Order</h3> -->
+<mat-dialog-content class="text-center">
+    <div class="heading">Total Cost</div>
+    <div class= "value">{{data.cost| currency:"INR"}}</div>
+</mat-dialog-content>
+<mat-dialog-actions >
+    <button class="btn" mat-dialog-close="true" >Confirm</button>
+    <button id ="cancelbtn" class="btn" mat-dialog-close="false" >Cancel</button>
+</mat-dialog-actions>

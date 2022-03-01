@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-md-4 mx-auto mt-4">
+        <div class="card">
+            <div class="card-header text-center pt-3">
+                <h5>Verify OTP</h5>
+            </div>
+            <div class="card-body">
+                <div *ngIf="error_msg!=''" class="text-center">
+                    <h6 class="text-danger">{{error_msg}}</h6>
+                </div>
+                <div *ngIf="success_msg!=''" class="text-center">
+                    <h6 class="text-success">{{success_msg}}</h6>
+                </div>
+                <span class="my-4">
+                    A code has been sent to {{"*".repeat(6) + verifyPhone.slice(6)}}
+                </span>
+                <div class="text-center">
+                    <input [(ngModel)]="OTP" name = "otp" type="text" class="form-control" required>
+                    <!-- {{OTP}} -->
+                    <button (click) = "verifyOTP()" class= "btn m-4" type="submit">Verify</button>
+                </div>
+            </div>
+            <div class="card-footer">
+                <span class="text-muted">
+                    Didn't Receive the code?
+                    <button id ="resendBtn" (click) = "resendOTP()">Resend</button>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

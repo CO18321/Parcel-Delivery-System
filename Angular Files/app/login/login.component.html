@@ -1,0 +1,37 @@
+<div class="row mt-4">
+    <div class="col-md-6">
+        <span id ="heading">Parcel Delivery System</span>
+        <img src="../assets/bg2.png" id = "pdImage" alt="Parcel Delivery">
+    </div>
+    <div class="col-md-6">
+        <div class="card mx-4">
+            <div class="card-header">Login</div>
+            <div class="card-body">
+                <form [formGroup] = "loginForm" (ngSubmit) = "loginUser()" >
+                    <div class="form-group">
+                        <div *ngIf="dbError" class="text-center">
+                            <h6 class="text-danger">{{dbErrorMsg}}</h6>
+                        </div>
+                        <label for="email">Email</label>
+                        <input [class.is-invalid]="email?.invalid && email?.touched" formControlName="email" type="text" name="email" class="form-control" >
+                        <!-- <div *ngIf="email?.invalid && email?.touched"> -->
+                        <small [class.d-none] = "email?.valid || email?.untouched" class="text-danger">Email is Required</small>
+                        <!-- </div> -->
+                        
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input [class.is-invalid]="password?.invalid && password?.touched" formControlName="password" type="password" name="password" class="form-control">
+                        <!-- <div *ngIf="password?.invalid && password?.touched"> -->
+                        <small [class.d-none] = "password?.valid || password?.untouched" class="text-danger">Password is Required</small>
+                           <!-- </div> -->
+                    </div>
+                    <div class="text-center">
+                        <button class="btn" [disabled]="!loginForm.valid">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

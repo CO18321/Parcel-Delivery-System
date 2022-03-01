@@ -1,0 +1,45 @@
+
+#pdImage{
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+ }
+ 
+ #heading{
+     /* border: 2px solid red; */
+     /* font-family: poppins, sans-serif; */
+     font-size: 40px;
+     letter-spacing: 0.6px;;
+     font-weight: 500;
+     word-spacing: 7px;
+     color:#2a3b2c;
+     /* margin-top: 20px; */
+     display: block;
+     text-align: center;
+     /* fill: darkgray; */
+     /* text-transform: uppercase; */
+     
+ }
+ .card-header{
+     text-align: center;
+     /* background-color: ;
+     fon */
+     font-size: 24px;
+ }
+ .form-group{
+     margin-top:20px
+ }
+ .btn{
+     background-color: #6bcc93;
+     margin-top: 20px;
+ }
+ 
+ small{
+     font-weight: 300;
+     font-size: 12px;
+ 
+ }
+ input{
+     font-weight: 300;
+     margin-top: 5px;
+ }
