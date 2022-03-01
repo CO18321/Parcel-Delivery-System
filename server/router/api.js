@@ -113,7 +113,7 @@ router.post('/register', (req, res)=>{
                     res.status(500).send("Internal Server Error")
                 }
                 else{
-                    // sendSMS(phone, `You have Successfully Registered to Parcel Delivery System. Your verification code is ${otp}`)
+                    sendSMS(phone, `You have Successfully Registered to Parcel Delivery System. Your verification code is ${otp}`)
 
                     let payload = {subject: email}
                     let token = jwt.sign(payload,"secretKey!@#$%^&*")
@@ -257,7 +257,7 @@ router.put('/resendOTP', verifyToken, (req, res) =>{
                     res.status(400).send("Bad Request")
                 }
                 else{
-                    // sendSMS(result[0].phone,`Your verification code for Parcel Delivery System is ${otp}` )
+                    sendSMS(result[0].phone,`Your verification code for Parcel Delivery System is ${otp}` )
                     res.status(200).send("OTP Resent Successfully")
                 }
             })
