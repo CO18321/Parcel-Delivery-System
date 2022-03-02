@@ -4,8 +4,8 @@ const mysql = require('mysql')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 
-const accountSid = 'ACc40cf15b526d29a8f1eaff131efa90bf'; 
-const authToken = '9c9a447775fcc456bfa7013b5b3b4be3'; 
+const accountSid = ''; 
+const authToken = ''; 
 const client = require('twilio')(accountSid, authToken); 
 
 function sendSMS(userPhone, msgBody){
