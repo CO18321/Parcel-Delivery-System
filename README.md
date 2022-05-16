@@ -25,7 +25,7 @@
 <br>
 <p>
     <img src = "ss/l3.png"/ width="49%">
-    <img src = "ss/L2.png"/ width="49%">
+    <img src = "ss/l2.png"/ width="49%">
 </p>
 <br>    
 
