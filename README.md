@@ -4,14 +4,14 @@
 
 <img src = "ss/screencapture-localhost-4200-register-2022-05-16-20_53_24.png"/>
 <br>
-<div style="display: table; width:100%">
-<div style="display:table-cell;width:33.3%">
+<div style="width:100%">
+<div style="display:inline-block;width:32%">
     <img src = "ss/R1.png"/>
 </div>
-<div style="display:table-cell;width:33.3%">
+<div style="display:inline-block;width:32%">
     <img src = "ss/R2.png"/>
 </div>
-<div style="display:table-cell;width:33.3%">
+<div style="display:inline-block;width:32%">
     <img src = "ss/R3.png"/>
 </div>
 </div>
@@ -20,14 +20,14 @@
 
 <h style="font-size:20px"><strong>Step 2:</strong> Verify OTP</h>
 
-<div style="display: table; width:100%">
-<div style="display:table-cell;width:33.3%">
+<div style="width:100%">
+<div style="display:inline-block;width:32%">
     <img src = "ss/V1.png"/>
 </div>
-<div style="display:table-cell;width:33.3%">
+<div style="display:inline-block;width:32%">
     <img src = "ss/V2.png"/>
 </div>
-<div style="display:table-cell;width:33.3%">
+<div style="display:inline-block;width:32%">
     <img src = "ss/qwerty2.jpg" style="border-radius:4px"/>
 </div>
 </div>
@@ -37,11 +37,11 @@
 
 <img src = "ss/l1.png"/>
 <br>
-<div style="display: table; width:100%">
-<div style="display:table-cell;width:50%">
+<div style="width:100%">
+<div style="display:inline-block;width:49.5%">
     <img src = "ss/l3.png"/>
 </div>
-<div style="display:table-cell;width:50%">
+<div style="display:inline-block;width:49.5%">
     <img src = "ss/L2.png"/>
 </div>
 </div>
@@ -51,11 +51,11 @@
 
 <img src = "ss/p1.png"/>
 <br>
-<div style="display: table; width:100%">
-<div style="display:table-cell;width:50%">
+<div style="width:100%">
+<div style="display:inline-block;width:49.5%">
     <img src = "ss/p2.png"/>
 </div>
-<div style="display:table-cell;width:50%">
+<div style="display:inline-block;width:49.5%">
     <img src = "ss/p3.png"/>
 </div>
 </div>
@@ -66,20 +66,20 @@
     <img src = "ss/o6.png"/>
 </div>
 
-<div style="display: table; width:100%">
-    <div style="display:table-row;">
-        <div style="display:table-cell;width:50%">
+<div style="width:100%">
+    <div">
+        <div style="display:inline-block;width:49.5%">
             <img src = "ss/o2.png"/>
         </div>
-        <div style="display:table-cell;width:50%">
+        <div style="display:inline-block;width:49.5%">
             <img src = "ss/o3.png"/>
         </div>
     </div>
-    <div style="display:table-row;">
-        <div style="display:table-cell;width:50%">
+    <div">
+        <div style="display:inline-block;width:49.5%">
             <img src = "ss/o4.png"/>
         </div>
-        <div style="display:table-cell;width:50%">
+        <div style="display:inline-block;width:49.5%">
             <img src = "ss/o8.png"/>
         </div>
     </div>
