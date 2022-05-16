@@ -13,9 +13,9 @@
 
 <h style="font-size:30px"><strong>Step 2:</strong> Verify OTP</h>
 <p>
-    <img src = "ss/V1.png"/ height="255">
-    <img src = "ss/V2.png"/ height="255">
-    <img src = "ss/qwerty2.jpg"/ height="255" style="border-radius:4px">
+    <img src = "ss/V1.png"/ height="257">
+    <img src = "ss/V2.png"/ height="257">
+    <img src = "ss/qwerty2.jpg"/ height="257" style="border-radius:4px">
 </p>
 <br>
 
@@ -34,8 +34,8 @@
 <img src = "ss/p1.png"/>
 <br>
 <p>
-    <img src = "ss/p2.png"/ height="285">
-    <img src = "ss/p3.png"/ height="285">
+    <img src = "ss/p2.png"/ height="280">
+    <img src = "ss/p3.png"/ height="280">
 </p>
 
 <br>   
@@ -45,8 +45,8 @@
     <img src = "ss/o6.png"/>
 </div>
 <p>
-    <img src = "ss/o2.png"/ height="300">
-    <img src = "ss/o3.png"/ height="300">
+    <img src = "ss/o2.png"/ height="295">
+    <img src = "ss/o3.png"/ height="295">
 </p>
 <p>
     <img src = "ss/o4.png"/ height="270">
