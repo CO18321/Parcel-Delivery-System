@@ -5,17 +5,17 @@
 <img src = "ss/screencapture-localhost-4200-register-2022-05-16-20_53_24.png"/>
 <br>
 <p>
-    <img src = "ss/R1.png"/ height="240">
-    <img src = "ss/R2.png"/ height="240">
-    <img src = "ss/R3.png"/ height="240">
+    <img src = "ss/R1.png"/ height="242">
+    <img src = "ss/R2.png"/ height="242">
+    <img src = "ss/R3.png"/ height="242">
 </p>
 <br>
 
 <h style="font-size:30px"><strong>Step 2:</strong> Verify OTP</h>
 <p>
-    <img src = "ss/V1.png"/ height="130">
-    <img src = "ss/V2.png"/ height="130">
-    <img src = "ss/qwerty2.jpg"/ height="130" style="border-radius:4px">
+    <img src = "ss/V1.png"/ height="242">
+    <img src = "ss/V2.png"/ height="242">
+    <img src = "ss/qwerty2.jpg"/ height="242" style="border-radius:4px">
 </p>
 <br>
 
