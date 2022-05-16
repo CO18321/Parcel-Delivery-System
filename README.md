@@ -5,9 +5,9 @@
 <img src = "ss/screencapture-localhost-4200-register-2022-05-16-20_53_24.png"/>
 <br>
 <p>
-    <img src = "ss/R1.png"/ height="260">
-    <img src = "ss/R2.png"/ height="260">
-    <img src = "ss/R3.png"/ height="260">
+    <img src = "ss/R1.png"/ height="240">
+    <img src = "ss/R2.png"/ height="240">
+    <img src = "ss/R3.png"/ height="240">
 </p>
 <br>
 
