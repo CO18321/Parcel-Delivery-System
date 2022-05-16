@@ -1,20 +1,14 @@
 # Parcel Delivery System
 
-<h style="font-size:40px"><strong>Step 1:</strong> Register</h>
+<h style="font-size:20px"><strong>Step 1:</strong> Register</h>
 
 <img src = "ss/screencapture-localhost-4200-register-2022-05-16-20_53_24.png"/>
 <br>
-<div style="width:100%">
-<div style="display:inline-block;width:32%">
-    <img src = "ss/R1.png"/>
-</div>
-<div style="display:inline-block;width:32%">
-    <img src = "ss/R2.png"/>
-</div>
-<div style="display:inline-block;width:32%">
-    <img src = "ss/R3.png"/>
-</div>
-</div>
+<p>
+    <img src = "ss/R1.png"/ width="32%">
+    <img src = "ss/R2.png"/ width="32%">
+    <img src = "ss/R3.png"/ width="32%">
+</p>
 <br>
 
 
