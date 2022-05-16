@@ -5,13 +5,13 @@
 <img src = "ss/screencapture-localhost-4200-register-2022-05-16-20_53_24.png"/>
 <br>
 <div style="display: table; width:100%">
-<div style="display:table-cell;width:250px">
+<div style="display:table-cell;width:100px">
     <img src = "ss/R1.png"/>
 </div>
-<div style="display:table-cell;width:250px">
+<div style="display:table-cell;width:100px">
     <img src = "ss/R2.png"/>
 </div>
-<div style="display:table-cell;width:250px">
+<div style="display:table-cell;width:100px">
     <img src = "ss/R3.png"/>
 </div>
 </div>
