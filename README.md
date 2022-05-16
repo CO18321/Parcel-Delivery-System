@@ -34,8 +34,8 @@
 <img src = "ss/p1.png"/>
 <br>
 <p>
-    <img src = "ss/p2.png"/ height="150">
-    <img src = "ss/p3.png"/ height="150">
+    <img src = "ss/p2.png"/ height="270">
+    <img src = "ss/p3.png"/ height="270">
 </p>
 
 <br>   
@@ -45,8 +45,8 @@
     <img src = "ss/o6.png"/>
 </div>
 <p>
-    <img src = "ss/o2.png"/ height="159">
-    <img src = "ss/o3.png"/ height="159">
+    <img src = "ss/o2.png"/ height="270">
+    <img src = "ss/o3.png"/ height="270">
 </p>
 <p>
     <img src = "ss/o4.png"/ height="140">
