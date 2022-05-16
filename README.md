@@ -1,6 +1,6 @@
 # Parcel Delivery System
 
-<h style="font-size:20px"><strong>Step 1:</strong> Register</h>
+<h style="font-size:30px"><strong>Step 1:</strong> Register</h>
 
 <img src = "ss/screencapture-localhost-4200-register-2022-05-16-20_53_24.png"/>
 <br>
@@ -11,85 +11,57 @@
 </p>
 <br>
 
-
-<h style="font-size:20px"><strong>Step 2:</strong> Verify OTP</h>
-
-<div style="width:100%">
-<div style="display:inline-block;width:32%">
-    <img src = "ss/V1.png"/>
-</div>
-<div style="display:inline-block;width:32%">
-    <img src = "ss/V2.png"/>
-</div>
-<div style="display:inline-block;width:32%">
-    <img src = "ss/qwerty2.jpg" style="border-radius:4px"/>
-</div>
-</div>
+<h style="font-size:30px"><strong>Step 2:</strong> Verify OTP</h>
+<p>
+    <img src = "ss/V1.png"/ width="32%">
+    <img src = "ss/V2.png"/ width="32%">
+    <img src = "ss/qwerty2.jpg"/ width="32%" style="border-radius:4px">
+</p>
 <br>
 
-<h style="font-size:20px"><strong>Step 3:</strong> Login</h>
+<h style="font-size:30px"><strong>Step 3:</strong> Login</h>
 
 <img src = "ss/l1.png"/>
 <br>
-<div style="width:100%">
-<div style="display:inline-block;width:49.5%">
-    <img src = "ss/l3.png"/>
-</div>
-<div style="display:inline-block;width:49.5%">
-    <img src = "ss/L2.png"/>
-</div>
-</div>
+<p>
+    <img src = "ss/l3.png"/ width="49%">
+    <img src = "ss/L2.png"/ width="49%">
+</p>
 <br>    
 
-<h style="font-size:20px"><strong>Step 4:</strong> Update Profile</h>
+<h style="font-size:30px"><strong>Step 4:</strong> Update Profile</h>
 
 <img src = "ss/p1.png"/>
 <br>
-<div style="width:100%">
-<div style="display:inline-block;width:49.5%">
-    <img src = "ss/p2.png"/>
-</div>
-<div style="display:inline-block;width:49.5%">
-    <img src = "ss/p3.png"/>
-</div>
-</div>
+<p>
+    <img src = "ss/p2.png"/ width="49%">
+    <img src = "ss/p3.png"/ width="49.5%">
+</p>
+
 <br>   
 
-<h style="font-size:20px"><strong>Step 5:</strong> Place Order</h>
+<h style="font-size:30px"><strong>Step 5:</strong> Place Order</h>
 <div>
     <img src = "ss/o6.png"/>
 </div>
-
-<div style="width:100%">
-    <div">
-        <div style="display:inline-block;width:49.5%">
-            <img src = "ss/o2.png"/>
-        </div>
-        <div style="display:inline-block;width:49.5%">
-            <img src = "ss/o3.png"/>
-        </div>
-    </div>
-    <div">
-        <div style="display:inline-block;width:49.5%">
-            <img src = "ss/o4.png"/>
-        </div>
-        <div style="display:inline-block;width:49.5%">
-            <img src = "ss/o8.png"/>
-        </div>
-    </div>
-</div>
-<div style="display: table; width:100%">
-<div style="display:table-row;">
-    <img src = "ss/o5.png"/>
-</div>
-</div>
+<p>
+    <img src = "ss/o2.png"/ width="48%">
+    <img src = "ss/o3.png"/ width="50%">
+</p>
+<p>
+    <img src = "ss/o4.png"/ width="49%">
+    <img src = "ss/o8.png"/ width="49%">
+</p>
+<img src = "ss/o5.png"/>
 <br>   
-
-<h style="font-size:20px"><strong>Step 6:</strong> Track Orders</h>
-
-<img src = "ss/mo1.png"/>
 <br>
-<br>
-<img src = "ss/mo2.png"/>
+<h style="font-size:30px"><strong>Step 6:</strong> Track Orders</h>
 
+<p>
+<br>
+    <img src = "ss/mo1.png"/>
+    <br>
+    <br>
+    <img src = "ss/mo2.png"/>
+</p>
 <br>  
