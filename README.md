@@ -24,8 +24,8 @@
 <img src = "ss/l1.png"/>
 <br>
 <p>
-    <img src = "ss/l3.png"/ height=250">
-    <img src = "ss/l2.png"/ height="250">
+    <img src = "ss/l3.png"/ height=270">
+    <img src = "ss/l2.png"/ height="270">
 </p>
 <br>    
 
