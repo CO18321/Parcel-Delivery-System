@@ -13,9 +13,9 @@
 
 <h style="font-size:30px"><strong>Step 2:</strong> Verify OTP</h>
 <p>
-    <img src = "ss/V1.png"/ height="242">
-    <img src = "ss/V2.png"/ height="242">
-    <img src = "ss/qwerty2.jpg"/ height="242" style="border-radius:4px">
+    <img src = "ss/V1.png"/ height="250">
+    <img src = "ss/V2.png"/ height="250">
+    <img src = "ss/qwerty2.jpg"/ height="250" style="border-radius:4px">
 </p>
 <br>
 
