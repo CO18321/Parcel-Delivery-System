@@ -49,8 +49,8 @@
     <img src = "ss/o3.png"/ height="290">
 </p>
 <p>
-    <img src = "ss/o4.png"/ height="290">
-    <img src = "ss/o8.png"/ height="290">
+    <img src = "ss/o4.png"/ height="270">
+    <img src = "ss/o8.png"/ height="270">
 </p>
 <img src = "ss/o5.png"/>
 <br>   
